@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f2666;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 1px;
+    position: sticky;
+    top: 0;
+    background-color: #1f2666;
+}
+nav img{
+    width: 80px;
+}
+.links, .actionbtn{
+    display: none;
+}
+.hamburger{
+    color: white;
+    width: 40px;
+    height: 20px;
+
+}
+
+@media (min-width: 1024px){
+    main{
+        width: 90%;
+        margin: 25px auto;
+    }
+    nav img{
+        width: 100px;
+    }
+    .links, .actionbtn{
+    display: block
+}
+.hamburger{
+    display: none;
+}
+
+.links ul{
+    display: flex;
+    gap: 40px;
+}
+
+.links ul li{
+    list-style-type: none;
+}
+.links ul li a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.loginbtn, .regbtn{
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+}
+.loginbtn{
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+}
+.loginbtn:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+.regbtn{
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+}
+.regbtn:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.herosection{
+    margin-top: 60px;
+}
+
+.text-box{
+    text-align: center;
+    color: white;
+}
+.text-box h1{
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.text-box p{
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.btncontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.btncontainer button{
+    width: 220px;
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.explorebtn{
+    background-color: blue;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+.loginbutton{
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+}
+
+.explorebtn:hover{
+    background-color: white;
+    color: blue;
+}
+
+.loginbutton:hover{
+    background-color: white;
+    color: blue;
+}
+
+.whatsapp{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: green;
+    position: fixed;
+    right: 10px;
+}
+
+@media(min-width: 1024px){
+    .herosection{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .text-box{
+        text-align: left;
+    }
+    .btncontainer{
+        flex-direction: row;
+    }
+    .explorebtn:hover{
+        background-color: white;
+        color: blue;
+    }
+    .loginbutton:hover{
+        background-color: white;
+        color: blue;
+    }
+
+
+}
